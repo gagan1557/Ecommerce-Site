@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Site</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="/add_to_cart/style.css">
+<script src="https://kit.fontawesome.com/9164c660dc.js"></script>
+<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
+
+</head>
+<body>
+
+    <section id="header">
+        <a href="/index.html"><img src="/img/Brand_Logo-removebg.png" class="logo" alt=""></a>
+        
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="/index.html">Home</a></li>
+                <li><a href="/shop.html">Shop</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/contact.html">Contact Us</a></li>  
+                <li><a href="/login/index.html">Login <i class="fa-duotone fa-user fa-xl" style="--fa-primary-color: #0a0a0a; --fa-secondary-color: #050505;"></i></a></li>  
+                <li class="icon-cart"><a href="/add_to_cart/index.html"> <i class="fa-regular fa-bag-shopping fa-xl" style="color: #000000;"></i></a></li>
+
+                    <span class="icon-cart-span">0</span>
+            </ul>
+        </div>
+    </section>
+    
+
+    <div class="cartTab">
+        <h1>Shopping Cart</h1>
+        <div class="listCart">
+            
+        </div>
+        <div class="btn">
+            <button class="close">CLOSE</button>
+            <button class="checkOut">Check Out</button>
+        </div>
+    </div>
+    
+    
+
+    <section class="slider">
+        
+            <div class="slides">
+                <div class="slide">
+                    <section class="hero">
+                        <h1>Mid Season Sale.</h1>
+                        <p>Stock up on sportswear and limited edition collections </p>
+                        <p>on our awesome mid-season sale.</p>
+                        <button id="FIND-OUT-MORE"><a href="#">FIND OUT MORE</a></button>
+                        <button id="SHOP-NOW"><a href="/shop.html">SHOP NOW</a></button>
+                    </section>
+                    <img src="/images/Slider1.jpg" alt="Slide 1">
+                </div>
+                <div class="slide">
+                    <section class="hero">
+                        <h1>Best Sellers.</h1>
+                        <p>Stock up on sportswear and limited edition collections </p>
+                        <p>on our awesome mid-season sale.</p>
+                        <button id="FIND-OUT-MORE"><a href="#">FIND OUT MORE</a></button>
+                        <button id="SHOP-NOW"><a href="/shop.html">SHOP NOW</a></button>
+                    </section>
+                    <img src="/images/Slider2.jpg" alt="Slide 2">
+                </div>
+                <div class="slide">
+                    <section class="hero">
+                        <h1>Outwear Picks.</h1>
+                        <p>Stock up on sportswear and limited edition collections </p>
+                        <p>on our awesome mid-season sale.</p>
+                        <button id="FIND-OUT-MORE"><a href="#">FIND OUT MORE</a></button>
+                        <button id="SHOP-NOW"><a href="/shop.html">SHOP NOW</a></button>
+                    </section>
+                    <img src="/images/Slider3.jpg" alt="Slide 3">
+                </div>
+                <div class="slide">
+                    <section class="hero">
+                        <h1>Seasonal Offers.</h1>
+                        <p>Stock up on sportswear and limited edition collections </p>
+                        <p>on our awesome mid-season sale.</p>
+                        <button id="FIND-OUT-MORE"><a href="#">FIND OUT MORE</a></button>
+                        <button id="SHOP-NOW"><a href="/shop.html">SHOP NOW</a></button>
+                    </section>
+                    <img src="/images/Slider4.jpg" alt="Slide 4">
+                </div>
+                
+            </div>
+        
+            
+        
+            
+            <div class="navigation">
+                <button class="prev" onclick="prevSlide()"><i class="fa-solid fa-angle-left fa-2xl" style="color: #0a0a0a;"></i></button>
+                <button class="next" onclick="nextSlide()"><i class="fa-solid fa-angle-right fa-2xl" style="color: #0a0a0a;"></i></button>
+            </div>
+
+            
+       
+    </section>
+
+
+    <section>
+        <div class="home-shop">
+            <div class="home-shop-img">
+                <img src="/images/home-shop-1-image-1.jpg" > 
+                <div class="overlay">
+                    <div class="text">Sportswear</div>
+                </div>
+            </div>
+            <div class="home-shop-img">
+                <img src="/images/home-shop-1-image-2.jpg" > 
+                <div class="overlay">
+                    <div class="text">Women</div>
+                </div>
+            </div>
+            <div class="home-shop-img">
+                <img src="/images/home-shop-1-image-3.jpg" > 
+                <div class="overlay">
+                    <div class="text">Men</div>
+                </div>
+            </div>
+            <div class="home-shop-img">
+                <img src="/images/home-shop-1-image-4.jpg" > 
+                <div class="overlay">
+                    <div class="text">Shoes</div>
+                </div>
+            </div>
+            <div class="home-shop-img">
+                <img src="/images/home-shop-1-image-5.jpg" >
+                 <div class="overlay">
+                    <div class="text">Accessories</div>
+                </div>
+            </div>         
+        </div>
+    </section>
+
+    
+        <div class="box1">
+            
+            <h2 class="box1-h2">New Products</h>
+            <h1 class="box1-h1">Shop The New Collection</h1>
+            <div class="gallery-wrap">
+                
+                <button id="scroll-left" onclick="scrollLeft()"><i class="fa-solid fa-angle-left fa-2xl" style="color: #050505;"></i></button>
+        
+                <div class="gallery" id="gallery">
+
+                    <div>
+                        
+                    <span class="span1" id="span1">
+                        <span id="img1">
+                        <a href="/sproduct.html"><img  src="/images/shop-standard-1-600x650.jpg"> </a> <pre> Men, Shoes, Sportswear                                 <i class="fa-regular fa-heart fa" style="color: grey;"></i></pre> <h2>Black skater Sneaker</h2>  <p><i class="fa-duotone fa-indian-rupee-sign fa-xl" style="--fa-primary-color: #0c0d0d; --fa-secondary-color: #0c0d0d;"></i>4000/-</p> <hr>
+                        </span>
+
+                        <span id="img2">
+                        <a href="/sproduct.html"><img  src="/images/shop-standard-1-gallery-1-600x650.jpg" alt=""></a> <pre> Men, Shoes, Sportswear                                 <i class="fa-regular fa-heart fa" style="color: grey;"></i></pre> <h2>Black skater Sneaker</h2> <p><i class="fa-duotone fa-indian-rupee-sign fa-xl" style="--fa-primary-color: #0c0d0d; --fa-secondary-color: #0c0d0d;"></i>4000/-</p> <hr>
+                    </span>
+                    </span>
+                    <span class="span1" id="span2">
+                        <span id="img3">
+                        <a href="/sproduct2.html"><img  src="/images/shop-standard-2-600x650.jpg"> </a> <pre>Accessories, New Collection, Women       <i class="fa-regular fa-heart fa" style="color: grey;"></i></pre> <h2>Cream Tote Bag</h2>  <p><i class="fa-duotone fa-indian-rupee-sign fa-xl" style="--fa-primary-color: #0c0d0d; --fa-secondary-color: #0c0d0d;"></i>2500/-</p> <hr>
+                        </span>
+
+                        <span id="img4">
+                        <a href="/sproduct2.html"><img  src="/images/shop-standard-2-gallery-1-600x650.jpg" alt=""></a> <pre>Accessories, New Collection, Women       <i class="fa-regular fa-heart fa" style="color: grey;"></i></pre> <h2>Cream Tote Bag</h2>  <p><i class="fa-duotone fa-indian-rupee-sign fa-xl" style="--fa-primary-color: #0c0d0d; --fa-secondary-color: #0c0d0d;"></i>2500/-</p> <hr>
+                    </span>
+                    </span>
+
+
+                   
+
+                    <span class="span1" id="span3">
+                        <span id="img5">
+                        <a href="/sproduct3.html"><img  src="/images/shop-standard-3-600x650.jpg"> </a> <pre>Accessories, Sportswear, Women              <i class="fa-regular fa-heart fa" style="color: grey;"></i></pre> <h2>Futura Jumper</h2>  <p><i class="fa-duotone fa-indian-rupee-sign fa-xl" style="--fa-primary-color: #0c0d0d; --fa-secondary-color: #0c0d0d;"></i>3500/-</p> <hr>
+                        </span>
+
+                        <span id="img6">
+                        <a href="/sproduct3.html"><img  src="/images/shop-standard-3-gallery-1-600x650.jpg" alt=""></a> <pre>Accessories, Sportswear, Women              <i class="fa-regular fa-heart fa" style="color: grey;"></i></pre> <h2>Futura Jumper</h2>  <p><i class="fa-duotone fa-indian-rupee-sign fa-xl" style="--fa-primary-color: #0c0d0d; --fa-secondary-color: #0c0d0d;"></i>3500/-</p> <hr>
+                    </span>
+                    </span>
+
+                    </div>
+
+
+                    <div>
+                        <span class="span1" id="span4">
+                            <span id="img7">
+                            <a href="/sproduct4.html"><img  src="/images/shop-standard-4-600x650.jpg"> </a> <pre>Sportswear, New Collection, Men               <i class="fa-regular fa-heart fa" style="color: grey;"></i></pre> <h2>Grey Wool Sweater</h2>  <p><i class="fa-duotone fa-indian-rupee-sign fa-xl" style="--fa-primary-color: #0c0d0d; --fa-secondary-color: #0c0d0d;"></i>999/-</p> <hr>
+                            </span>
+    
+                            <span id="img8">
+                            <a href="/sproduct4.html"><img  src="/images/shop-standard-4-gallery-1-600x650.jpg" alt=""></a> <pre>Sportswear, New Collection, Men               <i class="fa-regular fa-heart fa" style="color: grey;"></i></pre> <h2>Grey Wool Sweater</h2>  <p><i class="fa-duotone fa-indian-rupee-sign fa-xl" style="--fa-primary-color: #0c0d0d; --fa-secondary-color: #0c0d0d;"></i>999/-</p> <hr>
+                        </span>
+                        </span>
+
+                        <span class="span1" id="span5">
+                            <span id="img9">
+                            <a href="/sproduct5.html"><img  src="/images/shop-standard-5-600x650.jpg"> </a> <pre>Sportswear, New Collection, Men               <i class="fa-regular fa-heart fa" style="color: grey;"></i></pre> <h2>Heather Grey Sweatsuit</h2>   <p><i class="fa-duotone fa-indian-rupee-sign fa-xl" style="--fa-primary-color: #0c0d0d; --fa-secondary-color: #0c0d0d;"></i>1200/-</p> <hr>
+                            </span>
+    
+                            <span id="img10">
+                            <a href="/sproduct5.html"><img  src="/images/shop-standard-5-gallery-1-600x650.jpg" alt=""></a> <pre>Sportswear, New Collection, Men               <i class="fa-regular fa-heart fa" style="color: grey;"></i></pre> <h2>Heather Grey Sweatsuit</h2>   <p><i class="fa-duotone fa-indian-rupee-sign fa-xl" style="--fa-primary-color: #0c0d0d; --fa-secondary-color: #0c0d0d;"></i>1200/-</p> <hr>
+                        </span>
+                        </span>
+
+                        <span class="span1" id="span6">
+                            <span id="img11">
+                            <a href="/sproduct6.html"><img  src="/images/shop-standard-6-600x650.jpg"> </a> <pre>Shoes, New Collection, Women                   <i class="fa-regular fa-heart fa" style="color: grey;"></i></pre> <h2>Leopard Print Sandal</h2>  <p><i class="fa-duotone fa-indian-rupee-sign fa-xl" style="--fa-primary-color: #0c0d0d; --fa-secondary-color: #0c0d0d;"></i>700/-</p> <hr>
+                            </span>
+    
+                            <span id="img12">
+                            <a href="/sproduct6.html"><img  src="/images/shop-standard-6-gallery-1-600x650.jpg" alt=""></a> <pre>Shoes, New Collection, Women                   <i class="fa-regular fa-heart fa" style="color: grey;"></i></pre> <h2>Leopard Print Sandal</h2>  <p><i class="fa-duotone fa-indian-rupee-sign fa-xl" style="--fa-primary-color: #0c0d0d; --fa-secondary-color: #0c0d0d;"></i>700/-</p> <hr>
+                        </span>
+                        </span>
+
+                    </div>
+
+                    <div>
+                        <span class="span1" id="span7">
+                            <span id="img13">
+                            <a href="/sproduct7.html"><img  src="/images/shop-standard-7-600x650.jpg"> </a> <pre>Shoes, Sportswear, Women                      <i class="fa-regular fa-heart fa" style="color: grey;"></i></pre> <h2>Leopard Print Sneaker</h2>  <p><i class="fa-duotone fa-indian-rupee-sign fa-xl" style="--fa-primary-color: #0c0d0d; --fa-secondary-color: #0c0d0d;"></i>2500/-</p> <hr>
+                            </span>
+    
+                            <span id="img14">
+                            <a href="/sproduct7.html"><img  src="/images/shop-standard-7-gallery-1-600x650.jpg" alt=""></a> <pre>Shoes, Sportswear, Women                      <i class="fa-regular fa-heart fa" style="color: grey;"></i></pre> <h2>Leopard Print Sneaker</h2>  <p><i class="fa-duotone fa-indian-rupee-sign fa-xl" style="--fa-primary-color: #0c0d0d; --fa-secondary-color: #0c0d0d;"></i>2500/-</p> <hr>
+                        </span>
+                        </span>
+                        <span class="span1" id="span8">
+                            <span id="img15">
+                            <a href="/sproduct8.html"><img  src="/images/shop-standard-8-600x650.jpg"> </a> <pre>Accessories, New Collection, Women       <i class="fa-regular fa-heart fa" style="color: grey;"></i></pre> <h2>Navy Blue Winter Jacket</h2>  <p><i class="fa-duotone fa-indian-rupee-sign fa-xl" style="--fa-primary-color: #0c0d0d; --fa-secondary-color: #0c0d0d;"></i>3000/-</p> <hr>
+                            </span>
+    
+                            <span id="img16">
+                            <a href="/sproduct8.html"><img  src="/images/shop-standard-8-gallery-1-600x650.jpg" alt=""></a> <pre>Accessories, New Collection, Women       <i class="fa-regular fa-heart fa" style="color: grey;"></i></pre> <h2>Navy Blue Winter Jacket</h2>  <p><i class="fa-duotone fa-indian-rupee-sign fa-xl" style="--fa-primary-color: #0c0d0d; --fa-secondary-color: #0c0d0d;"></i>3000/-</p> <hr>
+                        </span>
+                        </span>
+                        <span class="span1" id="span9">
+                            <span id="img17">
+                            <a href="/sproduct9.html"><img  src="/images/shop-standard-9-600x650.jpg"> </a> <pre>Accessories, Shoes, Women                          <i class="fa-regular fa-heart fa" style="color: grey;"></i></pre> <h2>Striped slip-On</h2>  <p><i class="fa-duotone fa-indian-rupee-sign fa-xl" style="--fa-primary-color: #0c0d0d; --fa-secondary-color: #0c0d0d;"></i>500/-</p> <hr>
+                            </span>
+    
+                            <span id="img18">
+                            <a href="/sproduct9.html"><img  src="/images/shop-standard-9-gallery-1-600x650.jpg" alt=""></a> <pre>Accessories, Shoes, Women                          <i class="fa-regular fa-heart fa" style="color: grey;"></i></pre> <h2>Striped slip-On</h2>  <p><i class="fa-duotone fa-indian-rupee-sign fa-xl" style="--fa-primary-color: #0c0d0d; --fa-secondary-color: #0c0d0d;"></i>500/-</p> <hr>
+                        </span>
+                        </span>
+
+                        
+                    </div>
+
+                    <div>
+                        <span class="span1" id="span10">
+                            <span id="img19">
+                            <a href="/sproduct10.html"><img  src="/images/shop-standard-10-600x650.jpg"> </a> <pre>Accessories, Shoes, men                                 <i class="fa-regular fa-heart fa" style="color: grey;"></i></pre> <h2>Tech Wristwatch</h2>  <p><i class="fa-duotone fa-indian-rupee-sign fa-xl" style="--fa-primary-color: #0c0d0d; --fa-secondary-color: #0c0d0d;"></i>5500/-</p> <hr>
+                            </span>
+    
+                            <span id="img20">
+                            <a href="/sproduct10.html"><img  src="/images/shop-standard-10-gallery-1-600x650.jpg" alt=""></a> <pre>Accessories, Shoes, Men                                 <i class="fa-regular fa-heart fa" style="color: grey;"></i></pre> <h2>Tech Wristwatch</h2>  <p><i class="fa-duotone fa-indian-rupee-sign fa-xl" style="--fa-primary-color: #0c0d0d; --fa-secondary-color: #0c0d0d;"></i>5500/-</p> <hr>
+                        </span>
+                        </span>
+
+                        <span class="span1" id="span11">
+                            <span id="img21">
+                            <a href="/sproduct11.html"><img  src="/images/shop-standard-11-600x650.jpg"> </a> <pre>Accessories, Sportswear, Men                      <i class="fa-regular fa-heart fa" style="color: grey;"></i></pre> <h2>White X Black Backpack</h2>  <p><i class="fa-duotone fa-indian-rupee-sign fa-xl" style="--fa-primary-color: #0c0d0d; --fa-secondary-color: #0c0d0d;"></i>3500/-</p> <hr>
+                            </span>
+    
+                            <span id="img22">
+                            <a href="/sproduct11.html"><img  src="/images/shop-standard-11-gallery-1-600x650.jpg" alt=""></a> <pre>Accessories, Sportswear, Men                      <i class="fa-regular fa-heart fa" style="color: grey;"></i></pre> <h2>White X Black Backpack</h2>  <p><i class="fa-duotone fa-indian-rupee-sign fa-xl" style="--fa-primary-color: #0c0d0d; --fa-secondary-color: #0c0d0d;"></i>3500/-</p> <hr>
+                        </span>
+                        </span>
+
+                        <span class="span1" id="span12">
+                            <span id="img23">
+                            <a href="/sproduct12.html"><img  src="/images/shop-standard-12-600x650.jpg"> </a> <pre>Accessories, Sportswear, Men                      <i class="fa-regular fa-heart fa" style="color: grey;"></i></pre> <h2>White X Gold Sneaker</h2>  <p><i class="fa-duotone fa-indian-rupee-sign fa-xl" style="--fa-primary-color: #0c0d0d; --fa-secondary-color: #0c0d0d;"></i>1900/-</p> <hr>
+                            </span>
+    
+                            <span id="img24">
+                            <a href="/sproduct12.html"><img  src="/images/shop-standard-12-gallery-1-600x650.jpg" alt=""></a> <pre>Accessories, Sportswear, Men                      <i class="fa-regular fa-heart fa" style="color: grey;"></i></pre> <h2>White X Gold Sneaker</h2>  <p><i class="fa-duotone fa-indian-rupee-sign fa-xl" style="--fa-primary-color: #0c0d0d; --fa-secondary-color: #0c0d0d;"></i>1900/-</p> <hr>
+                        </span>
+                        </span>
+                    </div>
+                    
+                    
+                
+
+                </div>
+        
+                <button id="scroll-right" onclick="scrollRight()"><i class="fa-solid fa-angle-right fa-2xl" style="color: #050505;"></i></button>
+            </div>
+            
+        </div>
+    
+    
+    
+       
+            <section class="parallax-1">
+                <div class="parallax-inner">
+                    <h1>Shop Limited Edition.</h1>
+                    <br>
+                    <br>
+                    <pre>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,tempore reiciendis possimus 
+    facere ea rem explicabo nostrum ab vero incidunt accusantium recusandae?</pre>
+                    <button id="FIND-OUT-MORE"><a href="#">FIND OUT MORE</a></button>
+                    <button id="SHOP-NOW"><a href="/shop.html">SHOP NOW</a></button>
+                </div>
+            </section>
+    
+
+
+       
+    
+        
+        <div class="table">
+            <table >
+                <tr>
+                    <td><h1>Featured</h1></td>
+                    <td class="hr"><hr ></td>
+                    <td><h1 style="padding-left: 5rem;">Sale</h1></td>
+                    <td class="hr"><hr ></td>
+                    <td><h1 style="padding-left: 5rem;">Trending</h1></td>
+                    <td class="hr" style="width: 40rem;"><hr ></td>
+                </tr>
+
+                <tr>
+                    <td class="tdd"><img src="/images/shop-standard-4-100x108.jpg" style="margin-left: 1.5rem; padding-left: 0;"></td>
+                    
+                    <td class="word" style="padding-top: 3rem;"><h1>Grey Wool Sweater</h1>
+                    <p>Men, New Collection, Sportswear  </p></td>
+
+                    <td class="tdd" ><img src="/images/shop-standard-11-100x108.jpg" alt=""></td>
+                    
+                    <td class="word"><h1 style="margin-left: 2rem; padding-top: 3rem;">White X Black Backpack</h1>
+                        <p style="margin-left: 2rem;">Accessories, Men, Sportswear</p></td>
+                    
+                        <td class="td2" colspan="2"
+                    rowspan="3"><img src="/images/home-shop-1-banner-1.jpg" alt=""></td>
+                </tr>
+                <tr>
+                    
+                    <td class="td1"><img src="/images/shop-standard-7-100x108.jpg" style="margin-left: 1.5rem; padding-left: 0;"></td>
+                    
+                    <td class="word"><h1 >Sneaker Print Leopard</h1>
+                        <p>Men, Shoes, Sportswear  </p></td>
+                    
+                    <td class="td1"><img src="/images/shop-standard-9-100x108.jpg" alt=""></td>
+                    
+                    <td class="word"><h1 style="margin-left: 2rem; ">Striped Slip-On</h1>
+                        <p style="margin-left: 2rem;">Accessories, Women, Shoes</p></td>
+                </tr>
+                <tr>
+                    
+                    <td class="td1"><img src="/images/shop-standard-10-100x108.jpg" style="margin-left: 1.5rem; padding-left: 0;"></td>
+                    
+                    <td class="word"><h1 >Tech Wristwatch</h1>
+                        <p>Men, Accessories, Sportswear  </p></td>
+                    
+                    <td class="td1"><img src="/images/shop-standard-4-100x108.jpg" alt=""></td>
+                    
+                    <td class="word"><h1 style="margin-left: 2rem; ">Striped Slip-On</h1>
+                        <p style="margin-left: 2rem;">Accessories, Women, Shoes</p></td>
+                </tr>
+            </table>
+        </div>
+
+    
+
+
+    
+    <div class="banner"><img src="/images/home-shop-1-image-6.jpg" >
+        <div class="banner-text"> <h1>Free Shipping Worldwide.</h1>
+        </div>
+        <button id="SHOP-NOW" ><a href="/shop.html">SHOP NOW !</a></button>
+
+    </div>
+   
+    
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">watch</a></li>
+                        <li><a href="#">bag</a></li>
+                        <li><a href="#">shoes</a></li>
+                        <li><a href="#">dress</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+ 
+    
+
+
+
+
+
+
+   <!-- <script src="/add_to_cart/app.js"></script>  -->
+    <script  src="/script.js"></script>
+    <script src="/script2.js"></script>
+</body>
+</html>

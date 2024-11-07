@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100..900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+/* Global Styles */
+
+
+
+.section-p1 {
+  padding: 4rem 8rem;
+}
+
+.section-m1 {
+  margin: 4rem 0;
+}
+
+body {
+  width: 100%;
+}
+
+.logo{
+  height: 10rem;
+  width: 20rem;
+}
+
+
+
+#header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 1rem 0vh; */
+  padding:0 3rem 0 3rem;
+  background:#ffffff;
+  box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.06);
+}
+
+#navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+#navbar li{
+  list-style: none;
+  padding: 0 2.5rem;
+  position: relative;
+}
+
+#navbar li a{
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+  color: #088178;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+  content: "";
+  width: 30%;
+  height: 0.2rem;
+  background:#088178;
+  position: absolute;
+  bottom: -0.4rem;
+  left: 2.5rem;
+
+}
+
+
+
+  
+  .gallery{
+    
+    display: flex;
+    overflow-y: scroll;
+    
+    }
+
+    .gallery h2{
+      margin-top: 1rem;
+      font-weight: 600 ;
+      text-align: justify;
+    }
+
+    .gallery pre{
+      font-size: 1.2rem;
+      text-align: justify;
+    }
+    .gallery p{
+      margin-top: 0.5rem;
+      font-weight: bold  ;
+      text-align: justify;
+      font-size: 1.1rem;
+      color: grey ;
+      
+      
+    }
+    .gallery p i{
+      padding-right: 0.6rem;
+    }
+    
+    .gallery div{
+    width: 100%;
+    /* display: flex    ; */
+    /* grid-template-rows: auto auto auto; */
+
+    }
+    
+    .gallery span{
+      margin-left: 0;
+      padding-top: 0;
+      padding-right: 1rem;
+      padding-left: 0;
+      
+      
+    }
+    .gallery hr{
+      margin-top: 2.5rem;
+    }
+    
+    .gallery div img{
+      margin-left: 0;
+        height: 30rem;
+        padding : 0;
+        width: auto;
+        transition: transform 0.5s ;
+    }
+    
+    .hidden{
+      display: none;
+    }
+    .show{
+      display: block;
+    }
+    
+
+    .gallery::-webkit-scrollbar{
+        display: none;
+    }
+    
+    
+    
+    
+    .gallery div img:hover{
+        
+        cursor: pointer;
+        
+        
+      }
