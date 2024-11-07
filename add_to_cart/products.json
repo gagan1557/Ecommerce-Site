@@ -1,0 +1,76 @@
+[
+    {
+        "id": 1,
+        "name":"Grey Wool Sweater",
+        "price": 999,
+        "image": "image/1.jpg"
+    },
+    {
+        "id": 2,
+        "name":" Navy Blue Winter Jacket",
+        "price": 3000,
+        "image": "image/2.jpg"
+    },
+    {
+        "id": 3,
+        "name":" Striped Slip-On",
+        "price": 500,
+        "image": "image/3.jpg"
+    },
+    {
+        "id": 4,
+        "name":" Tech Wristwatch",
+        "price": 5500,
+        "image": "image/4.jpg"
+    },
+    {
+        "id": 5,
+        "name":" White X Black Backpack",
+        "price": 3500,
+        "image": "image/5.jpg"
+    },
+    {
+        "id": 6,
+        "name":" White X Gold Sneaker",
+        "price": 1900,
+        "image": "image/6.jpg"
+    },
+    {
+        "id": 7,
+        "name":" Black skater Sneaker",
+        "price": 4000,
+        "image": "image/7.jpg"
+    },
+    {
+        "id": 8,
+        "name":" Heather Grey Sweatsuit",
+        "price": 1200,
+        "image": "image/8.jpg"
+    },
+    {
+        "id": 9,
+        "name":" Futura Jumper",
+        "price": 3500,
+        "image": "image/9.jpg"
+    },
+    {
+        "id": 10,
+        "name":" Cream Tote Bag",
+        "price": 2500,
+        "image": "image/10.jpg"
+    },
+    {
+        "id": 11,
+        "name":" Leopard Print Sandal",
+        "price": 700,
+        "image": "image/11.jpg"
+    },
+    {
+        "id": 12,
+        "name":" Leopard Print Sneaker",
+        "price": 2500,
+        "image": "image/12.jpg"
+    }
+    
+
+]
